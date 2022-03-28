@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class BaseClass extends Actor
 {
-    private static final double WALKING_SPEED =2.0;
+    private static final double WALKING_SPEED =1.0;
     
     
     
