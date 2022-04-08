@@ -2,8 +2,8 @@ public class Bear extends Animal {
 
     public Bear() {
         reveal();
-        swim();
-        run();
+        super.swimAction = new Swimmer();
+        super.runAction = new Runner();
     }
 
     @Override

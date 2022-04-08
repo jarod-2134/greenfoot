@@ -2,8 +2,8 @@ public class Wolf extends Animal{
 
     public Wolf() {
         reveal();
-        swim();
-        run();
+        super.swimAction = new Swimmer();
+        super.runAction = new Runner();
     }
 
     @Override

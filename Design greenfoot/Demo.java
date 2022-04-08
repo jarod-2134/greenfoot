@@ -1,12 +1,20 @@
 public class Demo {
 
     public static void main(String[] args) {
-        new Owl();
+    Animal bear = new Bear();
+    bear.run();
+    bear.swim();
 
-        new Snake();
+    Animal owl = new Owl();
+    owl.run();
+    owl.swim();
+    
+    Animal wolf = new Wolf();
+    wolf.run();
+    wolf.swim();
 
-        new Bear();
-
-        new Wolf();
-}
-}
+    Animal snake = new Snake();
+    snake.run();
+    snake.swim();
+    }
+    }

@@ -13,4 +13,11 @@ public abstract class Animal {
        this.runAction.run();
     }
 
+    public void setSwimAction(SwimAction swimAction){
+this.swimAction = swimAction;
+    }
+
+    public void setRunAction(RunAction runAction){
+this.runAction = runAction;
+    }
 }
