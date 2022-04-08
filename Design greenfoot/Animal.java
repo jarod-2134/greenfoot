@@ -7,4 +7,9 @@ public abstract class Animal {
         System.out.println("This "  + className+  " is swimming.");
     }
     
+    public void run(){
+        String className =this.getClass().getSimpleName().toLowerCase();
+        System.out.println("This " + className+ " is running.");
+    }
+
 }
