@@ -1,15 +1,16 @@
 public abstract class Animal {
     
+    SwimAction swimAction;
+    RunAction runAction;
+
     abstract void reveal();
 
     public void swim() {
-        String className = this.getClass().getSimpleName().toLowerCase();
-        System.out.println("This "  + className+  " is swimming.");
+        this.swimAction.swim();
     }
     
     public void run(){
-        String className =this.getClass().getSimpleName().toLowerCase();
-        System.out.println("This " + className+ " is running.");
+       this.runAction.run();
     }
 
 }
