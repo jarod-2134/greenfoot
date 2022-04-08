@@ -1,5 +1,5 @@
 public abstract class Animal {
-    
+
     SwimAction swimAction;
     RunAction runAction;
 
@@ -8,16 +8,16 @@ public abstract class Animal {
     public void swim() {
         this.swimAction.swim();
     }
-    
-    public void run(){
-       this.runAction.run();
+
+    public void run() {
+        this.runAction.run();
     }
 
-    public void setSwimAction(SwimAction swimAction){
-this.swimAction = swimAction;
+    public void setSwimAction(SwimAction swimAction) {
+        this.swimAction = swimAction;
     }
 
-    public void setRunAction(RunAction runAction){
-this.runAction = runAction;
+    public void setRunAction(RunAction runAction) {
+        this.runAction = runAction;
     }
 }
