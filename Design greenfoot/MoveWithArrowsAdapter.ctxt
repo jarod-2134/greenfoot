@@ -1,3 +1,5 @@
 #BlueJ class context
 comment0.target=MoveWithArrowsAdapter
-numComments=1
+comment1.params=actor
+comment1.target=void\ move(greenfoot.Actor)
+numComments=2
