@@ -12,21 +12,7 @@ public class FindFlower implements FindInterface {
     {
         if(canSee(Flower.class))
         {
-            Flower flower = (Flower) getOneObjectAtOffset(0, 0, Flower.class);
-            if(flower.getPoisonous())
-            {
-                removeObject (LittleRedCap.class);
-                score=score-3;
-
-            }else {
-                score++;
-            }
             removeObject (Flower.class);
-            Level1 Level1 = (Level1)getWorld();
-            World world = getWorld();
-            world.removeObjects(world.getObjects(Scoreboard.class));
-            world.addObject (new Scoreboard(score), 75,25);
-
         }
     }
 }
