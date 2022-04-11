@@ -1,14 +1,8 @@
-public class Wolf extends Animal{
+import greenfoot.*;  
 
+public class Wolf extends Being
+{
     public Wolf() {
-        reveal();
-        super.swimAction = new Swimmer();
-        super.runAction = new Runner();
+        super.moveInterface = new MoveRandom();
     }
-
-    @Override
-    public void reveal() {
-        System.out.println("I am a wolf. You have to be afraid of me.");
-    }
-    
 }

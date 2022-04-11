@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=MoveRandom
+comment1.params=actor
+comment1.target=void\ move(greenfoot.Actor)
+comment2.params=
+comment2.target=void\ turnAtEdge()
+comment3.params=
+comment3.target=void\ walkRandom()
+comment3.text=\r\n\ causes\ a\ random\ walk\r\n
+comment4.params=
+comment4.target=boolean\ atWorldEdge()
+comment5.params=min\ max
+comment5.target=int\ getRandomNumber(int,\ int)
+numComments=6
