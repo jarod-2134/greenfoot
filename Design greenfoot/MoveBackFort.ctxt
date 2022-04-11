@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MoveBackFort
+comment1.params=actor
+comment1.target=void\ move(greenfoot.Actor)
+comment2.params=
+comment2.target=boolean\ atWorldEdge()
+comment3.params=
+comment3.target=void\ turnAtEdge()
+numComments=4

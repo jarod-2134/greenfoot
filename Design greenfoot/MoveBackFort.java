@@ -29,7 +29,6 @@ public class MoveBackFort implements MoveInterface
             if(actor.getX()>570)
             {
                 //resetting image
-                actor.setImage("wolfbackandforth.gif");
                 actor.setRotation(180);
                 actor.getImage().mirrorVertically();
             }
@@ -37,7 +36,6 @@ public class MoveBackFort implements MoveInterface
             if(actor.getX()<30)
             {
                 //resetting image
-                actor.setImage("wolfbackandforth.gif");
                 actor.setRotation(360);
             }
         }

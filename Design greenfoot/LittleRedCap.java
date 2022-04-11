@@ -6,8 +6,14 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name)
  * @version (a version number or a date)
  */
-public class LittleRedCap extends Being {
+public class LittleRedCap extends Actor {
+    private MoveInterface moveInterface;
+
     public LittleRedCap() {
-        super.moveInterface = new MoveWithArrowsAdapter();
+        moveInterface = new MoveWithArrowsAdapter();
+    }
+
+    public void act(){
+        moveInterface.move(this);
     }
 }

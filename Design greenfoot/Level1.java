@@ -21,6 +21,8 @@ public class Level1 extends World
     private void prepare()
     {
         addObject(new LittleRedCap(), 295, 550);
+        addObject(new Wolf(), 195, 550);
+        addObject(new BackFortWolf(), 95, 550);
 
     }
 }

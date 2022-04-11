@@ -9,13 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public abstract class Being extends Actor
 {
     protected MoveInterface moveInterface;
-    protected FindInterface findInterface;
-    protected KeyInterface keyInterface;
 
     public void act() 
     {       
         moveInterface.move(this);
-        findInterface.find(this);
-        keyInterface.keys(this);
     } 
 }
