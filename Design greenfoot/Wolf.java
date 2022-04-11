@@ -1,8 +1,14 @@
-import greenfoot.*;  
+import greenfoot.*;
 
-public class Wolf extends Being
-{
+public class Wolf extends Actor {
+
+    private MoveInterface moveInterface;
+
     public Wolf() {
-        super.moveInterface = new MoveRandom();
+        moveInterface = new MoveRandom();
+    }
+
+    public void act() {
+        moveInterface.move(this);
     }
 }

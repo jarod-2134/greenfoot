@@ -1,8 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class BackFortWolf extends Being
+public class BackFortWolf extends Actor
 {
+    private MoveInterface moveInterface;
+
     public BackFortWolf() {
-        super.moveInterface = new MoveBackFort();
+        moveInterface = new MoveBackFort();
+    }
+
+    public void act(){
+        moveInterface.move(this);
     }
 }

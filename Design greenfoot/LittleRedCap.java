@@ -13,7 +13,7 @@ public class LittleRedCap extends Actor {
         moveInterface = new MoveWithArrowsAdapter();
     }
 
-    public void act(){
+    public void act() {
         moveInterface.move(this);
     }
 }
