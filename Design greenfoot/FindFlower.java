@@ -4,6 +4,7 @@ public class FindFlower implements FindInterface {
     private Actor actor;
     
     public void find (Actor actor){
+        this.actor=actor;
     pickflowers();
     }
     
