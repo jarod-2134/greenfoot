@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=MoveBackFort
+comment0.target=MoveBackForth
 comment1.params=actor
 comment1.target=void\ move(greenfoot.Actor)
 comment2.params=

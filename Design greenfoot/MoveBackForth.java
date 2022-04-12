@@ -1,6 +1,6 @@
 import greenfoot.*; 
 
-public class MoveBackFort implements MoveInterface
+public class MoveBackForth implements MoveInterface
 {
     private Actor actor;
 

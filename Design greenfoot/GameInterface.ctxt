@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=GameInterface
+comment1.params=actor
+comment1.target=void\ game(greenfoot.Actor)
+numComments=2

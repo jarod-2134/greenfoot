@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Loser
+comment1.params=actor
+comment1.target=void\ game(greenfoot.Actor)
+comment2.params=
+comment2.target=void\ gameOver()
+numComments=3

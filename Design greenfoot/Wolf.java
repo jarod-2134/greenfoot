@@ -7,7 +7,7 @@ public class Wolf extends Actor {
     
     public Wolf() {
         moveInterface = new MoveRandom();
-        findInterface = new FindLittleRedCap
+        findInterface = new FindLittleRedCap();
     }
 
     public void act() {

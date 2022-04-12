@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=FindLittleRedCap
+comment1.params=actor
+comment1.target=void\ find(greenfoot.Actor)
+comment2.params=
+comment2.target=void\ eatLittleRedCap()
+numComments=3
