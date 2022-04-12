@@ -18,6 +18,9 @@ public class FindLittleRedCap implements FindInterface {
             actor.getWorld().removeObject(littleRedCap);
             World world = actor.getWorld();
             world.addObject (new Announcement(), 300, 300);
+            Level1 Level1 = (Level1)actor.getWorld();
+            world.removeObjects(world.getObjects(Scoreboard.class));
+            world.addObject (new Scoreboard(score), 75,25);
             Greenfoot.stop();
         }
 

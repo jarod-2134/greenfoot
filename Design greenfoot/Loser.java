@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Loser implements GameInterface {
     private Actor actor;
-    protected int score = 0;
+    public int score;
 
     public void game(Actor actor) {
         this.actor = actor;
@@ -11,14 +11,11 @@ public class Loser implements GameInterface {
     }
 
     public void loser() {
-        List list = (actor.getWorld().getObjectsAt(actor.getX(), actor.getY(), scoreboard.class));
-        if (list.size() == 1) {
-
-            if (this.score == 10) {
-                World world = actor.getWorld();
-                world.addObject(new WinnerAnnouncement(), 300, 300);
-
-            }
-        }
+       World world = actor.getWorld();
+       score = Scoreboard.getScore();
+       if(score<0){
+           world.addObject(new Announcement(), 300, 300);
+           Greenfoot.stop();
+       }
     }
 }

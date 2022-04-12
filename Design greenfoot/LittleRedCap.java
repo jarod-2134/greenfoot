@@ -11,17 +11,19 @@ public class LittleRedCap extends Actor {
     private MoveInterface moveInterface;
     private FindInterface findInterface;
     private GameInterface gameInterface;
+    private GameInterface gameInterface2;
 
     public LittleRedCap() {
         moveInterface = new MoveWithArrowsAdapter();
         findInterface = new FindFlower();
         gameInterface = new Winner();
-        gameInterface = new Loser();
+        gameInterface2 = new Loser();
     }
 
     public void act() {
         moveInterface.move(this);
         findInterface.find(this);
         gameInterface.game(this);
+        gameInterface2.game(this);
     }
 }

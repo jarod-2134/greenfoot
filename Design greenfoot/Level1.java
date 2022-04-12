@@ -3,11 +3,6 @@ import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
 
-/**
- * Dit is het eerste level.
- * 
- * @Naomi Uwugiaren
- */
 public class Level1 extends World
 {
     private int pinkFlowers = 15;
@@ -35,13 +30,7 @@ public class Level1 extends World
         addObject(new Scoreboard(0),75,25);
         
           for ( int counter = 0; counter < pinkFlowers; counter=counter+1){
-            addObject (new Flower(true),
-            getRandomNumber(100,500),
-            getRandomNumber(100,500));
-        }
-        
-         for ( int counter = 0; counter < pinkFlowers; counter=counter+1){
-            addObject (new Flower(),
+            addObject (new Flower(getRandomNumber(0, 2)),
             getRandomNumber(100,500),
             getRandomNumber(100,500));
         }

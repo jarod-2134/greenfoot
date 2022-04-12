@@ -9,32 +9,28 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Flower extends Actor
 {
     private int x;
-    private boolean poisonous;
+    private boolean ifpoisonous;
     public Flower()
     {
         setImage("sm-flower-pink.gif");
     }
     
-    public Flower(boolean  poisonousParameter)
+    public Flower(int poisonous)
     {
-        poisonous=poisonousParameter;
-        if(poisonous==true)
+        if(poisonous == 1)
         {
             setImage("sm-flower-blue.gif");
+            ifpoisonous = true;
         }else
         {
             setImage("sm-flower-pink.gif");
+            ifpoisonous = false;
         }
     }
     
      public boolean getPoisonous()
     {
-        return this.poisonous;
+        return this.ifpoisonous;
     }
-    
-     public int sampleMethod(int y)
-    {
-        this.poisonous=poisonous;
-        return x+y;
-    }
+
 }

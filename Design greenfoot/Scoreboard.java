@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Scoreboard here.
@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Scoreboard extends Actor
-{       private int score;
+{   private static int score;
     public static final float FONTSIZE = 24.0f;
     public static final int WIDTH = 150;
     public static final int HEIGHT = 50;
@@ -21,18 +21,9 @@ public class Scoreboard extends Actor
         score=scoreParameter;    
         makeScoreBoard();
 
-    }
+    } 
+    
 
-    
-    /**
-     * Act - do whatever the Scoreboard wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
-    
     public void makeScoreBoard()
     {
           Color color = new Color (RED,GREEN,BLUE,TRANSPARENCY);
@@ -53,7 +44,7 @@ public class Scoreboard extends Actor
 
     }
     
-    public int getScore()
+    public static int getScore()
     {
         return score;
     }

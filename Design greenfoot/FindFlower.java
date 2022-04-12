@@ -3,7 +3,7 @@ import java.util.*;
 
 public class FindFlower implements FindInterface {
     private Actor actor;
-    public int score = 0;
+    public int score;
 
     public void find(Actor actor) {
         this.actor = actor;
