@@ -7,18 +7,18 @@ public class Loser implements GameInterface {
 
     public void game(Actor actor) {
         this.actor = actor;
+        loser();
     }
 
-    public void gameOver() {
-        List list = (actor.getWorld().getObjectsAt(actor.getX(), actor.getY(), LittleRedCap.class));
-        if (this.score < 0) {
+    public void loser() {
+        List list = (actor.getWorld().getObjectsAt(actor.getX(), actor.getY(), scoreboard.class));
+        if (list.size() == 1) {
 
-            World world = actor.getWorld();
-            Scoreboard scoreboard = actor.getWorld().getObjects(Scoreboard.class).get(0);
-            this.score = scoreboard.getScore();
-            world.addObject(new Announcement(), 300, 300);
-            Greenfoot.stop();
+            if (this.score == 10) {
+                World world = actor.getWorld();
+                world.addObject(new WinnerAnnouncement(), 300, 300);
 
+            }
         }
     }
 }

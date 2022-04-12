@@ -3,7 +3,7 @@ import java.util.*;
 
 public class FindFlower implements FindInterface {
     private Actor actor;
-    protected int score = 0;
+    public int score = 0;
 
     public void find(Actor actor) {
         this.actor = actor;
@@ -19,7 +19,6 @@ public class FindFlower implements FindInterface {
             if(flower.getPoisonous())
             {
                 score=score-3;
-
             }else {
                 score++;
             }
