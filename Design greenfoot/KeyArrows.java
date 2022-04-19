@@ -33,6 +33,32 @@ public class KeyArrows implements KeyInterface {
             actor.setImage("redcapright.gif");
 
         }
+        
+        if (Greenfoot.isKeyDown("a"))
+        {
+            actor.setLocation(actor.getX() -SPEED, actor.getY());
+            actor.setImage("redcapleft.gif");
+        }
 
+        if (Greenfoot.isKeyDown("s"))
+        {
+            actor.setLocation(actor.getX(), actor.getY() + SPEED);
+            actor.setImage("redcapfront.gif");
+
+        }
+
+        if (Greenfoot.isKeyDown("w"))
+        {
+            actor.setLocation(actor.getX(), actor.getY() - SPEED);
+            actor.setImage("redcapbehind.gif");
+
+        }
+
+        if (Greenfoot.isKeyDown("d"))
+        {
+            actor.setLocation(actor.getX()+SPEED, actor.getY());
+            actor.setImage("redcapright.gif");
+
+        }
     }
 }
