@@ -1,6 +1,6 @@
 import greenfoot.*; 
 
-public interface GameController  
+public interface GameControllerInterface  
 {
     public void registerObserver(ObserverInterface observer);
 	public void removeObserver(ObserverInterface observer);

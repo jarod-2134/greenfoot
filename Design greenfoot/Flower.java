@@ -14,7 +14,7 @@ public class Flower extends Being
     {
         setImage("sm-flower-pink.gif");
         this.gameController=gameController;
-        this.gameController.registerObserver(this);
+        this.gameController.removeObserver(this);
     }
     
     public Flower(int poisonous)
