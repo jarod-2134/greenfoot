@@ -6,13 +6,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Jarod de Graaf) 
  * @version (12-4-2017)
  */
-public class Flower extends Actor
+public class Flower extends Being
 {
-    private int x;
+
     private boolean ifpoisonous;
-    public Flower()
+    public Flower(GameController gameController)
     {
         setImage("sm-flower-pink.gif");
+        this.gameController=gameController;
+        this.gameController.registerObserver(this);
     }
     
     public Flower(int poisonous)

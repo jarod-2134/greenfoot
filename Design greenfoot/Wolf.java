@@ -1,13 +1,15 @@
 import greenfoot.*;
 
-public class Wolf extends Actor {
+public class Wolf extends Being {
 
     private MoveInterface moveInterface;
     private FindInterface findInterface;
     
-    public Wolf() {
+    public Wolf(GameController gameController) {
         moveInterface = new MoveRandom();
         findInterface = new FindLittleRedCap();
+        this.gameController=gameController;
+        this.gameController.registerObserver(this);
     }
 
     public void act() {
